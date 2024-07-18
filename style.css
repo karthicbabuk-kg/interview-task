@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 100%;
+  
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  header {
+    padding: 10px;
+    height: 50px;
+    background-color: #ff7171;
+  }
+  
+  .navbar {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+  }
+  
+  .navbar .nav-items,
+  .navbar .nav-icon {
+    display: inline;
+    font-size: large;
+    letter-spacing: 5px;
+    font-weight: bold;
+  }
+  
+  .navbar .nav-icon img {
+    height: 30px;
+  }
+  
+  .home {
+    height: calc(100vh - 50px);
+  }
+  
+  
+  .container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(90deg, #fff7ad, #fbb1ea);
+  }
+  
+  .img {
+    order: 1;
+  }
+  
+  .card {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .content {
+    width: 70%;
+  }
+  
+  .content * {
+    margin: 40px auto;
+  }
+  
+  .content h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+  }
+  
+  .content p {
+    line-height: 1.3;
+    font-weight: 500;
+  }
+  
+  .content button {
+    margin-top: 20px;
+    border: none;
+    color: white;
+    background-color: #ff7171;
+    font-size: 1rem;
+    padding: 10px 20px;
+    width: 200px;
+  }
+  
+  .card-img {
+    background-image: url("./src/pexels-robin-stickel-70497.jpg");
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+  
+  .about {
+    height: 100vh;
+  }
+  
+  .about .container {
+    justify-content: center;
+  }
+  
+  .about .card {
+    align-content: center;
+  }
+  
+  .about .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 50%;
+  }
+  
+  .about .content div {
+    margin: 0;
+    width: 200px;
+    min-height: 150px;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .order-1 {
+    background-image: url("./src/pexels-rachel-claire-6752433.jpg");
+  
+  }
+  
+  .order-2 {
+    background-image: url("./src/pexels-mister-mister-3434523.jpg");
+    grid-column: 2;
+    grid-row: 1/span 2;
+    height: 320px;
+  }
+  
+  .order-3 {
+    background-image: url("./src/pexels-eva-bronzini-6141651.jpg");
+  
+  }
+  
+  .banner {
+    width: 80%;
+    background-color: #ff7171;
+    padding: 20px;
+  }
+  
+  .banner h1 {
+    font-size: 3rem;
+    margin: 15px 0;
+  }
+  
+  .banner p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  .banner button {
+    margin-top: 15px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-size: 1rem;
+  }
+  
+  .banner button img {
+    margin-left: 10px;
+  }
+  
+  @media screen and (max-width : 992px) {
+    .navbar {
+      justify-content: end;
+    }
+  
+    .navbar .nav-items {
+      display: none;
+    }
+  
+    .content {
+      width: 85%;
+    }
+  
+    .content h1 {
+      font-size: 35px;
+      letter-spacing: 3px;
+    }
+  
+    .content p {
+      line-height: 1.2;
+      font-weight: 500;
+    }
+  
+    .about .content div {
+      min-width: 150px;
+      max-width: 200px ;
+  width: 100%;
+    }
+  
+    .banner h1 {
+      font-size: 3rem;
+    }
+  
+    .banner p {
+      font-size: 1rem;
+    }
+  
+    .banner button {
+  
+      font-size: 1rem;
+    }
+  }
+  
+  @media screen and (max-width:767px) {
+    .navbar {
+      justify-content: end;
+    }
+  
+    .home {
+      height: auto;
+    }
+  
+    .card-img {
+      width: 100%;
+      height: 500px;
+    }
+  
+    .navbar .nav-items {
+      display: none;
+    }
+  
+    .container {
+      display: block;
+    }
+  
+    .card {
+      width: 100%;
+    }
+  
+    .about {
+      min-height: 150vh;
+    }
+  
+    .about .card {
+      height: 50%;
+      display: block;
+    }
+  
+    .about .card .content {
+      margin: auto;
+      width: 80%;
+    }
+  
+    .about .content div {
+      min-width: 200px;
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    .banner {
+      margin: auto;
+    }
+  }
